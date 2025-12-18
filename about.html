@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ABOUT</title>
+
+    <style>
+        body {
+            font-family: Arial, Tahoma, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            /* Background Image */
+            background-image: url("garishijau.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: #e75480;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: rgba(255, 228, 235, 0.85); /* Transparent soft pink */
+            text-align: center;
+            padding: 12px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav a {
+            color: #a61b5b;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 18px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #fff;
+            background-color: #a61b5b;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #a61b5b;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #e75480;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .profile-img {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* ===== MUSIC PLAYER DESIGN ===== */
+        .music-player {
+            max-width: 420px;
+            margin: 30px auto;
+            background: #ffe4ec;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+
+        .music-player h4 {
+            margin: 0 0 12px;
+            color: #a61b5b;
+            font-size: 18px;
+        }
+
+        .music-player audio {
+            width: 100%;
+            outline: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 228, 235, 0.85);
+            color: #a61b5b;
+            font-size: 16px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    INFORMATION
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>ABOUT ME</h2>
+
+    <!-- Profile Image -->
+    <img src="picture.jpg.jpeg" class="profile-img" alt="Profile Picture">
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+        <h4>DNANDA - Bola Mata Sayu</h4>
+        <audio controls>
+            <source src="DNANDA - Bola Mata Sayu (Official Lyric Video).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <h3>Introduction</h3>
+    <p>
+        Hello! My name is Nur Ain Binti Hamid. I am 20 years old and based in Kulai, Johor.
+        I am number 6 out of 8 siblings. Currently, I am a semester 4 student in UiTM Kedah.
+        I am a passionate learner, always eager to explore new knowledge and experiences.
+    </p>
+
+    <h3>Hobbies and Skills</h3>
+    <p>
+        Outside of my studies, I enjoy cooking and baking. Experimenting with recipes teaches me patience,
+        creativity, and attention to detail. I also enjoy exploring new technologies and improving my digital skills.
+    </p>
+
+    <h3>Goals</h3>
+    <p>
+        My ultimate goal is to continue advancing my education and developing skills that allow me to contribute
+        meaningfully in my future career.
+    </p>
+
+    <h3>Future Plans</h3>
+    <p>
+        I hope to become a master’s degree holder, open a business in the future, and be someone who can inspire others.
+    </p>
+</div>
+
+<footer>
+    &copy; 2025 Nur Ain Binti Hamid
+</footer>
+
+</body>
+</html>

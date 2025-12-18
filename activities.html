@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>INFORMATION</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("garishijau.jpg"); 
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: rgba(231, 84, 128, 0.9); /* dark pink semi-transparent */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    nav {
+        background: rgba(255, 182, 193, 0.85); /* light pink transparent */
+        text-align: center;
+        padding: 12px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav a {
+        color: #c2185b;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 30px;
+        background: rgba(255, 240, 245, 0.9); /* semi-transparent soft pink */
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    h2 {
+        color: #a61b5b;
+        text-align: center;
+    }
+
+    .activity-box {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 25px;
+        border-left: 6px solid #e75480;
+    }
+
+    .activity-box h3 {
+        color: #d63384;
+    }
+
+    .slider-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .media-holder img,
+    .media-holder video {
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    .slider-container button {
+        padding: 8px 16px;
+        margin: 10px 5px;
+        background-color: #e75480;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .slider-container button:hover {
+        background-color: #c2185b;
+    }
+</style>
+</head>
+
+<body>
+
+<header>INFORMATION</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Activities</h2>
+
+    <!-- ACTIVITY 1 -->
+    <div class="slider-container">
+        <div class="media-holder"></div>
+        <br>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+
+    <div class="activity-box">
+        <h3>Flood Area Cleaning Volunteer Program (Community Service)</h3>
+        <p>
+            Participated in a community clean-up program to help residents after a flood that was held by UiTM Kedah under co-curriculum club (Kesatria Kembara). 
+            It was located in Gurun, Kedah. This activity involved cleaning public areas, schools, organizing donations, and assisting affected families in restoring their homes and schools. 
+            It strengthened my teamwork, empathy, and sense of social responsibility.
+        </p>
+    </div>
+
+    <!-- ACTIVITY 2 -->
+    <div class="slider-container">
+        <div class="media-holder"></div>
+        <br>
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
+    </div>
+
+    <div class="activity-box">
+        <h3>River Roadtrip with Classmates</h3>
+        <p>
+            As part of a recreational and team-building activity. The trip provided an opportunity to strengthen friendships, improve teamwork and enhance communication skills through shared activities and cooperation. 
+            This experience also encouraged stress relief, mutual support, and a positive learning environment outside the classroom.
+        </p>
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.slider-container').forEach(function(container, i) {
+
+    const mediaList = i === 0
+        ? ["flood1.jpg.jpeg","flood2.jpg.jpeg","flood3.jpg.jpeg","flood4.jpg.jpeg"]
+        : ["river1.jpg.jpeg","river2.jpg.jpeg","river3.jpg.jpeg","river4.jpg.jpeg","river5.jpg.jpeg","rivervideo1.mp4"];
+
+    let index = 0;
+    const holder = container.querySelector('.media-holder');
+
+    function renderMedia() {
+        holder.innerHTML = "";
+
+        if (mediaList[index].endsWith(".mp4")) {
+            const video = document.createElement("video");
+            video.src = mediaList[index];
+            video.controls = true;
+            video.width = 400;
+            holder.appendChild(video);
+        } else {
+            const img = document.createElement("img");
+            img.src = mediaList[index];
+            holder.appendChild(img);
+        }
+    }
+
+    container.querySelector('.next').onclick = function() {
+        index = (index + 1) % mediaList.length;
+        renderMedia();
+    };
+
+    container.querySelector('.prev').onclick = function() {
+        index = (index - 1 + mediaList.length) % mediaList.length;
+        renderMedia();
+    };
+
+    renderMedia();
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>EDUCATION</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Background Image */
+            background-image: url("garishijau.jpg"); */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(231, 84, 128, 0.9); /* Dark pink semi-transparent */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: rgba(255, 192, 203, 0.85);
+            text-align: center;
+            padding: 12px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #d63384;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            padding: 35px;
+            background: rgba(255, 228, 235, 0.95); /* Soft pink transparent box */
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #a61b5b;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 18px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-radius: 6px;
+        }
+
+        th {
+            background: linear-gradient(to right, #f8c2d4, #e75480);
+            color: white;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #ffe4ec;
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #fff0f5;
+        }
+
+        tr:hover td {
+            background-color: #ffd1e0;
+            transition: 0.3s;
+        }
+
+        a.education-link, a.map-link {
+            color: #a61b5b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a.education-link:hover, a.map-link:hover {
+            text-decoration: underline;
+        }
+
+        .map-box {
+            margin-top: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <b>EDUCATION</b>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>MY EDUCATION BACKGROUND</h2>
+
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Institution</th>
+            <th>Qualification</th>
+        </tr>
+        <tr> 
+            <td>2024 - Present</td>
+            <td>
+                <a href="https://kedah.uitm.edu.my/" target="_blank" rel="noopener noreferrer" class="education-link">
+                    Universiti Teknologi MARA (UiTM Kedah)
+                </a>
+            </td>
+            <td>Diploma in Informatics Library</td>
+        </tr>
+        <tr>
+            <td>2018 - 2023</td>
+            <td>
+                <a href="https://myschool.daa-taa.com/school/sekolah-menengah-kebangsaan-kelapa-sawit-4449" 
+                   target="_blank" rel="noopener noreferrer" class="education-link">
+                    SMK Kelapa Sawit
+                </a>
+            </td>
+            <td>Form 1 – Form 5</td>
+        </tr>
+    </table>
+
+    <!-- Map Link -->
+    <div class="map-box">
+        <p>
+            <strong>View Location Map of SMK Kelapa Sawit:</strong><br>
+            <a href="https://mapcarta.com/W524314845" target="_blank" rel="noopener noreferrer" class="map-link">
+                Click here to see the map
+            </a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
+

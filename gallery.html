@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("garishijau.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: rgba(231, 84, 128, 0.9); /* dark pink semi-transparent */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background: rgba(255, 192, 203, 0.85); /* light transparent pink */
+            text-align: center;
+            padding: 12px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #d63384;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 30px;
+            background: rgba(255, 228, 235, 0.9); /* semi-transparent pink */
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #a61b5b;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery-grid img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 5px;
+            color: #a61b5b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <b>INFORMATION</b>
+</header>
+
+<nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="activities.html">Activities</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>GALLERY : FOOD THAT I COOK</h2>
+
+    <div class="gallery-grid">
+        <div>
+            <img src="FOOD1.jpeg" alt="Photo 1">
+            <p class="caption">NASI AYAM GEPUK</p>
+        </div>
+        <div>
+            <img src="FOOD2.jpeg" alt="Photo 2">
+            <p class="caption">SPICY BUTTERMILK CHICKEN</p>
+        </div>
+        <div>
+            <img src="FOOD3.jpeg" alt="Photo 3">
+            <p class="caption">CENDOL PULUT</p>
+        </div>
+        <div>
+            <img src="FOOD4.jpeg" alt="Photo 4">
+            <p class="caption">LONTONG KUAH</p>
+        </div>
+        <div>
+            <img src="FOOD11.jpeg" alt="Photo 5">
+            <p class="caption">CHICKEN TENDER & LAMB CHOP</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
